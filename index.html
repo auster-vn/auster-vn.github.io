@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chau Phu Tran | Portfolio - Data Scientist & Data Engineer</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Ambient Background Orbs -->
+  <div class="bg-orb orb-primary"></div>
+  <div class="bg-orb orb-secondary"></div>
+  <div class="bg-orb orb-tertiary"></div>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-accent">&lt;</span>CPT<span class="logo-accent">.dev /&gt;</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="nav-cta">
+        <a href="#contact" class="btn-nav">Hire Me</a>
+      </div>
+      
+      <!-- Mobile menu toggle -->
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">🚀 Open to Opportunities</div>
+        <h1 class="hero-title">
+          Hi, I am <span class="text-gradient">Chau Phu Tran</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          I'm a <span id="typewriter" class="text-glow"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-text">
+          Final-year Mathematics and Computer Science student at USSH/VNUHCM specializing in Data Science. Passionate about building robust event-driven data streaming pipelines, training high-accuracy machine learning algorithms, and deploying containerized full-stack solutions.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="photo-wrapper">
+          <div class="photo-grid-bg"></div>
+          <svg class="photo-star photo-star-tl" viewBox="0 0 24 24"><path d="M12 0 L15 9 L24 12 L15 15 L12 24 L9 15 L0 12 L9 9 Z" fill="#00f2fe" /></svg>
+          <svg class="photo-star photo-star-br" viewBox="0 0 24 24"><path d="M12 0 L15 9 L24 12 L15 15 L12 24 L9 15 L0 12 L9 9 Z" fill="#b19ffb" /></svg>
+          <img src="assets/images/photo.png" alt="Chau Phu Tran" class="hero-photo">
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <a href="#about" class="scroll-mouse" aria-label="Scroll Down">
+        <span class="mouse-wheel"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title-text"><span class="text-gradient">About Me</span></h2>
+        <p class="section-desc">Get to know my academic background, career drivers, and technical philosophy.</p>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="card-icon">🎓</div>
+          <h3>Education & Rigor</h3>
+          <p>
+            Currently pursuing my Bachelor's degree in <strong>Mathematics and Computer Science</strong> (specializing in Data Science) at **Truong Dai Hoc Khoa Hoc Tu Nhien - VNUHCM (HCMUS)**, graduating in June 2026. Equipped with a strong mathematical baseline in probability, statistics, and linear algebra.
+          </p>
+        </div>
+        
+        <div class="about-card glass-card">
+          <div class="card-icon">⚡</div>
+          <h3>System Philosophy</h3>
+          <p>
+            Believer in "systems that scale and adapt". Whether it is a dynamic prioritization algorithm for hospital clinics, an end-to-end event broker handling real-time data logs, or an ensembled ranker trained on 30M+ transactional records, I focus on clean code and structural performance.
+          </p>
+        </div>
+        
+        <div class="about-card glass-card">
+          <div class="card-icon">🐧</div>
+          <h3>OS & Dev Environment</h3>
+          <p>
+            A dedicated **Arch Linux** and **Ubuntu** daily driver for 3+ years. Deeply familiar with terminal workflows, bash scripting, Vim, Docker containerization, and configuring decoupled event-driven microservices.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills-section-container">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title-text"><span class="text-gradient">Technical Arsenal</span></h2>
+        <p class="section-desc">The core programming languages, frameworks, and database technologies I leverage daily.</p>
+      </div>
+      
+      <div class="skills-grid">
+        
+        <!-- Programming & Data -->
+        <div class="skills-category glass-card">
+          <h3>Languages & Data</h3>
+          <div class="skills-list-tags">
+            <span class="skill-tag"><i class="tag-dot cyan"></i> Python</span>
+            <span class="skill-tag"><i class="tag-dot cyan"></i> SQL</span>
+            <span class="skill-tag"><i class="tag-dot cyan"></i> R Language</span>
+            <span class="skill-tag"><i class="tag-dot cyan"></i> C / C++</span>
+            <span class="skill-tag"><i class="tag-dot cyan"></i> TypeScript</span>
+            <span class="skill-tag"><i class="tag-dot cyan"></i> Bash Scripting</span>
+          </div>
+        </div>
+        
+        <!-- Data Engineering -->
+        <div class="skills-category glass-card">
+          <h3>Data Engineering</h3>
+          <div class="skills-list-tags">
+            <span class="skill-tag"><i class="tag-dot purple"></i> Apache Kafka</span>
+            <span class="skill-tag"><i class="tag-dot purple"></i> Apache Zookeeper</span>
+            <span class="skill-tag"><i class="tag-dot purple"></i> PostgreSQL</span>
+            <span class="skill-tag"><i class="tag-dot purple"></i> SQLite</span>
+            <span class="skill-tag"><i class="tag-dot purple"></i> Prisma ORM</span>
+            <span class="skill-tag"><i class="tag-dot purple"></i> ELT / ETL Pipelines</span>
+            <span class="skill-tag"><i class="tag-dot purple"></i> Event-Driven Architecture</span>
+          </div>
+        </div>
+        
+        <!-- AI/ML & Computer Vision -->
+        <div class="skills-category glass-card">
+          <h3>AI / ML & CV</h3>
+          <div class="skills-list-tags">
+            <span class="skill-tag"><i class="tag-dot pink"></i> PyTorch</span>
+            <span class="skill-tag"><i class="tag-dot pink"></i> TensorFlow</span>
+            <span class="skill-tag"><i class="tag-dot pink"></i> Scikit-Learn</span>
+            <span class="skill-tag"><i class="tag-dot pink"></i> Deep Learning (CNN, RNN)</span>
+            <span class="skill-tag"><i class="tag-dot pink"></i> OpenCV</span>
+            <span class="skill-tag"><i class="tag-dot pink"></i> YOLO Object Detection</span>
+            <span class="skill-tag"><i class="tag-dot pink"></i> Recommender Systems</span>
+          </div>
+        </div>
+        
+        <!-- DevOps & Services -->
+        <div class="skills-category glass-card">
+          <h3>DevOps & Deployment</h3>
+          <div class="skills-list-tags">
+            <span class="skill-tag"><i class="tag-dot green"></i> Docker</span>
+            <span class="skill-tag"><i class="tag-dot green"></i> Docker Compose</span>
+            <span class="skill-tag"><i class="tag-dot green"></i> FastAPI</span>
+            <span class="skill-tag"><i class="tag-dot green"></i> Flask</span>
+            <span class="skill-tag"><i class="tag-dot green"></i> Node.js & Express</span>
+            <span class="skill-tag"><i class="tag-dot green"></i> Socket.IO</span>
+            <span class="skill-tag"><i class="tag-dot green"></i> Git & GitHub Pages</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title-text"><span class="text-gradient">Featured Work</span></h2>
+        <p class="section-desc">A showcase of production-ready systems, data pipelines, and prize-winning ML solutions.</p>
+      </div>
+      
+      <!-- Project Filter Tabs -->
+      <div class="filter-container">
+        <button class="filter-tab active" data-filter="all">All Projects</button>
+        <button class="filter-tab" data-filter="de">Data Engineering</button>
+        <button class="filter-tab" data-filter="ml">Machine Learning & AI</button>
+      </div>
+      
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- Project 1: DE CareFlow -->
+        <div class="project-card glass-card" data-category="de">
+          <div class="project-badge">System Integration</div>
+          <div class="project-content">
+            <h3 class="project-title">DE CareFlow 🏥</h3>
+            <h4 class="project-subtitle">Intelligent Patient Flow & Queue Management Platform</h4>
+            <p class="project-desc">
+              An event-driven patient queuing platform built to optimize outpatient flows and handleHIS webhooks. Deploys a Dynamic Priority Queue Engine calculating patient priority scores using aging mathematical formulas in real time.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Socket.IO</span>
+              <span>Prisma</span>
+              <span>SQLite</span>
+              <span>HL7/FHIR</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/auster-vn/de-careflow" target="_blank" class="project-btn btn-code">
+                <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.4 6,9.5 6.63,8.8C6.53,8.55 6.18,7.52 6.73,6.15C6.73,6.15 7.58,5.88 9.5,7.17C10.3,6.95 11.18,6.84 12,6.84C12.82,6.84 13.7,6.95 14.5,7.17C16.42,5.88 17.27,6.15 17.27,6.15C17.82,7.52 17.47,8.55 17.37,8.8C18,9.5 18.38,10.4 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2: Weather Data Pipeline -->
+        <div class="project-card glass-card" data-category="de">
+          <div class="project-badge">Data Engineering</div>
+          <div class="project-content">
+            <h3 class="project-title">Real-Time Weather Streaming Pipeline 🌦️</h3>
+            <h4 class="project-subtitle">Distributed Ingestion, Messaging, and Persistence</h4>
+            <p class="project-desc">
+              An end-to-end containerized data pipeline fetching live weather metrics for Vietnamese cities at 10-minute intervals. Uses Confluent Kafka to decouple ingestion from PostgreSQL persistence with upsert-based conflict resolution.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Kafka</span>
+              <span>PostgreSQL</span>
+              <span>FastAPI</span>
+              <span>Docker</span>
+              <span>React</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/auster-vn/Real-Weather-DB" target="_blank" class="project-btn btn-code">
+                <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.4 6,9.5 6.63,8.8C6.53,8.55 6.18,7.52 6.73,6.15C6.73,6.15 7.58,5.88 9.5,7.17C10.3,6.95 11.18,6.84 12,6.84C12.82,6.84 13.7,6.95 14.5,7.17C16.42,5.88 17.27,6.15 17.27,6.15C17.82,7.52 17.47,8.55 17.37,8.8C18,9.5 18.38,10.4 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3: H&M Recommendations -->
+        <div class="project-card glass-card" data-category="ml">
+          <div class="project-badge">Kaggle Silver Medalist</div>
+          <div class="project-content">
+            <h3 class="project-title">H&M Fashion RecSys 🥈</h3>
+            <h4 class="project-subtitle">Personalized Multi-Modal Recommendation System</h4>
+            <p class="project-desc">
+              Silver Medal solution (Ranked 45th out of 3,006 teams - Top 1.5% globally) in a global Kaggle challenge. Implemented a two-stage recall and ranking pipeline, training LightGBM Rankers and DNNs using pre-trained DSSM, Word2Vec, and YouTube DNN embeddings.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>LightGBM</span>
+              <span>TensorFlow</span>
+              <span>Word2Vec</span>
+              <span>DSSM</span>
+              <span>Pandas</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/auster-vn/H-M-Personalized-Fashion-Recommendations" target="_blank" class="project-btn btn-code">
+                <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.4 6,9.5 6.63,8.8C6.53,8.55 6.18,7.52 6.73,6.15C6.73,6.15 7.58,5.88 9.5,7.17C10.3,6.95 11.18,6.84 12,6.84C12.82,6.84 13.7,6.95 14.5,7.17C16.42,5.88 17.27,6.15 17.27,6.15C17.82,7.52 17.47,8.55 17.37,8.8C18,9.5 18.38,10.4 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4: Movie Recommendation -->
+        <div class="project-card glass-card" data-category="ml">
+          <div class="project-badge">Machine Learning</div>
+          <div class="project-content">
+            <h3 class="project-title">Movie Recommendation Engine 🎬</h3>
+            <h4 class="project-subtitle">Collaborative & Content-Based Filtering</h4>
+            <p class="project-desc">
+              Developed a custom recommendation model combining user-based and content-based approaches. Cleaned raw movie metadata, engineered high-dimensional sparse user matrices, and generated movie similarity scores.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Scikit-Learn</span>
+              <span>NumPy</span>
+              <span>Sparse Matrices</span>
+              <span>Cosine Similarity</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/auster-vn/python_ds" target="_blank" class="project-btn btn-code">
+                <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.4 6,9.5 6.63,8.8C6.53,8.55 6.18,7.52 6.73,6.15C6.73,6.15 7.58,5.88 9.5,7.17C10.3,6.95 11.18,6.84 12,6.84C12.82,6.84 13.7,6.95 14.5,7.17C16.42,5.88 17.27,6.15 17.27,6.15C17.82,7.52 17.47,8.55 17.37,8.8C18,9.5 18.38,10.4 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 5: Fashion MNIST -->
+        <div class="project-card glass-card" data-category="ml">
+          <div class="project-badge">Deep Learning</div>
+          <div class="project-content">
+            <h3 class="project-title">Clothing Recognition System 👕</h3>
+            <h4 class="project-subtitle">Fashion MNIST Image Classifier & Cloud Inference</h4>
+            <p class="project-desc">
+              Trained deep convolutional neural networks (CNNs) to classify clothing items from fashion image databases. Conducted model evaluation and hyperparameter optimization, deploying models to AWS clouds for high-speed inference serving.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>PyTorch</span>
+              <span>TensorFlow</span>
+              <span>CNNs</span>
+              <span>AWS Cloud</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/auster-vn/fashion-mnist" target="_blank" class="project-btn btn-code">
+                <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.4 6,9.5 6.63,8.8C6.53,8.55 6.18,7.52 6.73,6.15C6.73,6.15 7.58,5.88 9.5,7.17C10.3,6.95 11.18,6.84 12,6.84C12.82,6.84 13.7,6.95 14.5,7.17C16.42,5.88 17.27,6.15 17.27,6.15C17.82,7.52 17.47,8.55 17.37,8.8C18,9.5 18.38,10.4 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE SECTION -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title-text"><span class="text-gradient">Professional Journey</span></h2>
+        <p class="section-desc">My professional internship and academic milestones.</p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        
+        <!-- Timeline Item 1: Intern -->
+        <div class="timeline-item">
+          <div class="timeline-badge">💼</div>
+          <div class="timeline-panel glass-card">
+            <span class="timeline-date">March 2025 - June 2025</span>
+            <h3>Data Engineer & AI Engineer Intern</h3>
+            <h4>Dizim AI | Ho Chi Minh City, Vietnam</h4>
+            <p>
+              Crawled and pre-processed large-scale media datasets for avatar generation models. Packaged deep learning model architectures using FastAPI and Docker, designed scalable ELT automation workflows, and configured custom Linux scripts for server administration.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 2: Uni -->
+        <div class="timeline-item">
+          <div class="timeline-badge">🎓</div>
+          <div class="timeline-panel glass-card">
+            <span class="timeline-date">2022 - 2026 (Expected)</span>
+            <h3>Bachelor of Mathematics & Computer Science</h3>
+            <h4>University of Science - VNUHCM (HCMUS) | GPA: 3.15</h4>
+            <p>
+              Specialized in Data Science. Key coursework includes advanced probability and statistics, applied matrix computation, database structures, machine learning theory, deep learning models, and large-scale data handling systems.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 3: School -->
+        <div class="timeline-item">
+          <div class="timeline-badge">📐</div>
+          <div class="timeline-panel glass-card">
+            <span class="timeline-date">2019 - 2022</span>
+            <h3>High School Diploma - Gifted Mathematics Class</h3>
+            <h4>Nguyen Thien Thanh High School for Gifted | Tra Vinh, Vietnam</h4>
+            <p>
+              Developed strong mathematical problem-solving skills and algorithmic thinking through an intensive mathematics curriculum.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title-text"><span class="text-gradient">Let's Connect</span></h2>
+        <p class="section-desc">Reach out for collaborations, data engine consultations, or hiring inquiries.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info-panel glass-card">
+          <h3>Contact Details</h3>
+          <p>Feel free to reach out via my phone, email, or explore my codebases on GitHub. I'll get back to you within 24 hours.</p>
+          
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <h4>Location</h4>
+                <p>Thu Duc, Ho Chi Minh City, Vietnam</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <span class="info-icon">📞</span>
+              <div>
+                <h4>Call Me</h4>
+                <p>0961-867-854</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <span class="info-icon">✉️</span>
+              <div>
+                <h4>Email Me</h4>
+                <p>phutc04@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://github.com/auster-vn" target="_blank" class="social-icon" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.4 6,9.5 6.63,8.8C6.53,8.55 6.18,7.52 6.73,6.15C6.73,6.15 7.58,5.88 9.5,7.17C10.3,6.95 11.18,6.84 12,6.84C12.82,6.84 13.7,6.95 14.5,7.17C16.42,5.88 17.27,6.15 17.27,6.15C17.82,7.52 17.47,8.55 17.37,8.8C18,9.5 18.38,10.4 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg>
+            </a>
+          </div>
+        </div>
+        
+        <form class="contact-form glass-card">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required placeholder="John Doe">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" required placeholder="john@example.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" required rows="5" placeholder="Let's build something great..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="footer-copy">&copy; 2026 Chau Phu Tran. All rights reserved.</p>
+      <a href="#home" class="footer-scroll-top" aria-label="Scroll Top">Top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
