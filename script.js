@@ -123,13 +123,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. SIMPLE FORM SUBMISSION HANDLER
+  // 5. EMAIL SUBMISSION HANDLER USING WEB3FORMS (REAL SENDING)
   const contactForm = document.querySelector('.contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
-      alert('Thank you for reaching out! In a hosted environment, this form would trigger an automated email API. Your message has been simulated successfully!');
-      contactForm.reset();
+      
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+
+      // Extract form data
+      const formData = new FormData(contactForm);
+      
+      // Access Key placeholder (users should replace this string in the code with their actual key)
+      formData.append('access_key', 'd019e35d-dd3f-47b5-a375-b119e1e6d46e');
+
+      // Fetch Web3Forms Submit API
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          alert('Thank you! Your message has been sent successfully.');
+          contactForm.reset();
+        } else {
+          alert('Oops! Something went wrong: ' + data.message);
+        }
+      })
+      .catch(error => {
+        alert('Connection error! Could not reach the email server.');
+      })
+      .finally(() => {
+        submitBtn.textContent = 'Send Message';
+        submitBtn.disabled = false;
+      });
     });
   }
 
