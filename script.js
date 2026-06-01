@@ -78,8 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
       
       projectCards.forEach(card => {
         const category = card.getAttribute('data-category');
+        const categories = category ? category.split(' ') : [];
         
-        if (filterValue === 'all' || category === filterValue) {
+        if (filterValue === 'all' || categories.includes(filterValue)) {
           // Show card with smooth animation
           card.style.display = 'flex';
           setTimeout(() => {
@@ -147,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(response => response.json())
       .then(data => {
         if (data.success) {
-          alert('Thank you! Your message has been sent successfully.');
+          alert('Thank you! Your contact information has been sent successfully.');
           contactForm.reset();
         } else {
           alert('Oops! Something went wrong: ' + data.message);
@@ -157,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Connection error! Could not reach the email server.');
       })
       .finally(() => {
-        submitBtn.textContent = 'Send Message';
+        submitBtn.textContent = 'Submit';
         submitBtn.disabled = false;
       });
     });

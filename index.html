@@ -306,24 +306,28 @@
           </div>
         </div>
         
-        <!-- Project 5: Fashion MNIST -->
-        <div class="project-card glass-card" data-category="ml">
-          <div class="project-badge">Deep Learning</div>
+        <!-- Project 5: Spotify AI Pipeline -->
+        <div class="project-card glass-card" data-category="de ml">
+          <div class="project-badge">Data Engineering & AI</div>
           <div class="project-content">
-            <h3 class="project-title">Clothing Recognition System 👕</h3>
-            <h4 class="project-subtitle">Fashion MNIST Image Classifier & Cloud Inference</h4>
+            <h3 class="project-title">Spotify AI-Powered Lakehouse & Agent 🎵</h3>
+            <h4 class="project-subtitle">End-to-End Modern Data Pipeline & Semantic Playlist Generator</h4>
             <p class="project-desc">
-              Trained deep convolutional neural networks (CNNs) to classify clothing items from fashion image databases. Conducted model evaluation and hyperparameter optimization, deploying models to AWS clouds for high-speed inference serving.
+              An end-to-end modern data stack pipeline ingesting Spotify listening history into a Bronze → Silver → Gold medallion lakehouse. Orchestrated via Dagster with MinIO (Parquet), transformed using dbt & Polars, and persisted in PostgreSQL. Features a Streamlit dashboard with a semantic playlist generator leveraging pgvector cosine similarity search and Gemini AI embeddings.
             </p>
             <div class="project-tech">
-              <span>Python</span>
-              <span>PyTorch</span>
-              <span>TensorFlow</span>
-              <span>CNNs</span>
-              <span>AWS Cloud</span>
+              <span>Dagster</span>
+              <span>dbt</span>
+              <span>pgvector</span>
+              <span>Gemini AI</span>
+              <span>MinIO</span>
+              <span>PostgreSQL</span>
+              <span>Polars</span>
+              <span>Streamlit</span>
+              <span>Docker</span>
             </div>
             <div class="project-actions">
-              <a href="https://github.com/auster-vn/fashion-mnist" target="_blank" class="project-btn btn-code">
+              <a href="https://github.com/auster-vn/spotify-ai-pipeline" target="_blank" class="project-btn btn-code">
                 <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.4 6,9.5 6.63,8.8C6.53,8.55 6.18,7.52 6.73,6.15C6.73,6.15 7.58,5.88 9.5,7.17C10.3,6.95 11.18,6.84 12,6.84C12.82,6.84 13.7,6.95 14.5,7.17C16.42,5.88 17.27,6.15 17.27,6.15C17.82,7.52 17.47,8.55 17.37,8.8C18,9.5 18.38,10.4 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg>
                 Source Code
               </a>
@@ -436,7 +440,7 @@
         </div>
         
         <form class="contact-form glass-card">
-          <h3>Send a Message</h3>
+          <h3>Get in Touch</h3>
           <div class="form-group">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" required placeholder="John Doe">
@@ -447,12 +451,7 @@
             <input type="email" id="email" name="email" required placeholder="john@example.com">
           </div>
           
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required rows="5" placeholder="Let's build something great..."></textarea>
-          </div>
-          
-          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </form>
       </div>
     </div>
