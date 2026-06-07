@@ -146,8 +146,9 @@
           <div class="skills-list-tags">
             <span class="skill-tag"><i class="tag-dot purple"></i> Apache Kafka</span>
             <span class="skill-tag"><i class="tag-dot purple"></i> Apache Zookeeper</span>
-            <span class="skill-tag"><i class="tag-dot purple"></i> PostgreSQL</span>
+            <span class="skill-tag"><i class="tag-dot purple"></i> PostgreSQL & PostGIS</span>
             <span class="skill-tag"><i class="tag-dot purple"></i> SQLite</span>
+            <span class="skill-tag"><i class="tag-dot purple"></i> TimescaleDB</span>
             <span class="skill-tag"><i class="tag-dot purple"></i> Prisma ORM</span>
             <span class="skill-tag"><i class="tag-dot purple"></i> ELT / ETL Pipelines</span>
             <span class="skill-tag"><i class="tag-dot purple"></i> Event-Driven Architecture</span>
@@ -164,6 +165,7 @@
             <span class="skill-tag"><i class="tag-dot pink"></i> Deep Learning (CNN, RNN)</span>
             <span class="skill-tag"><i class="tag-dot pink"></i> OpenCV</span>
             <span class="skill-tag"><i class="tag-dot pink"></i> YOLO Object Detection</span>
+            <span class="skill-tag"><i class="tag-dot pink"></i> LLMs & NLP (Gemini)</span>
             <span class="skill-tag"><i class="tag-dot pink"></i> Recommender Systems</span>
           </div>
         </div>
@@ -177,6 +179,8 @@
             <span class="skill-tag"><i class="tag-dot green"></i> FastAPI</span>
             <span class="skill-tag"><i class="tag-dot green"></i> Flask</span>
             <span class="skill-tag"><i class="tag-dot green"></i> Node.js & Express</span>
+            <span class="skill-tag"><i class="tag-dot green"></i> Next.js & React</span>
+            <span class="skill-tag"><i class="tag-dot green"></i> MapLibre GL / WebGL</span>
             <span class="skill-tag"><i class="tag-dot green"></i> Socket.IO</span>
             <span class="skill-tag"><i class="tag-dot green"></i> Git & GitHub Pages</span>
           </div>
@@ -204,6 +208,35 @@
       <!-- Projects Grid -->
       <div class="projects-grid">
         
+        <!-- Project: GeoWeather Platform -->
+        <div class="project-card glass-card" data-category="de ml">
+          <div class="project-badge">Data Engineering & GIS</div>
+          <div class="project-content">
+            <h3 class="project-title">GeoWeather Intelligence Platform 🌍</h3>
+            <h4 class="project-subtitle">Real-Time GIS, Streaming & AI-Powered Weather Analytics</h4>
+            <p class="project-desc">
+              An end-to-end, production-grade GIS platform that visualizes real-time weather data on an interactive 3D WebGL map. Features a robust event-streaming architecture (Kafka, Schema Registry) to ingest continuous updates. Incorporates a dual AI assistant utilizing both Google Gemini 2.5 Flash for deep insights and a blazing-fast local NLP pipeline (FlashText & Underthesea) for O(1) location entity extraction across 53,000+ Vietnamese administrative boundaries stored in PostGIS.
+            </p>
+            <div class="project-tech">
+              <span>Kafka</span>
+              <span>PostGIS</span>
+              <span>TimescaleDB</span>
+              <span>FastAPI</span>
+              <span>Next.js 16</span>
+              <span>MapLibre GL</span>
+              <span>Gemini AI</span>
+              <span>FlashText</span>
+              <span>Docker</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/auster-vn/geoWeather" target="_blank" class="project-btn btn-code">
+                <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.4 6,9.5 6.63,8.8C6.53,8.55 6.18,7.52 6.73,6.15C6.73,6.15 7.58,5.88 9.5,7.17C10.3,6.95 11.18,6.84 12,6.84C12.82,6.84 13.7,6.95 14.5,7.17C16.42,5.88 17.27,6.15 17.27,6.15C17.82,7.52 17.47,8.55 17.37,8.8C18,9.5 18.38,10.4 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
         <!-- Project: CareerFlow AI -->
         <div class="project-card glass-card" data-category="de ml">
           <div class="project-badge">Data Engineering & MLOps</div>
