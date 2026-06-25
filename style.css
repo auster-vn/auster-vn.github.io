@@ -707,6 +707,24 @@ body {
   fill: currentColor;
 }
 
+.btn-demo {
+  background: var(--primary-gradient);
+  color: #07070a;
+  border: 1px solid transparent;
+}
+
+.btn-demo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 242, 254, 0.35);
+  color: #07070a;
+}
+
+.btn-demo svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
 /* EXPERIENCE TIMELINE SECTION */
 .experience-section {
   padding: 100px 0;
